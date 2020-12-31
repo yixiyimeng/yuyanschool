@@ -15,7 +15,7 @@ input::-ms-clear { display: none !important; }
 input:-webkit-autofill { 
     -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset !important;
 }
-body { font: 12px/1.5 \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", "Droid Sans Fallback", SimSun, sans-serif; background: #fff; }
+body { font: 12px/1.5 \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", "Droid Sans Fallback", SimSun, sans-serif; background: #fff;box-sizing: border-box; }
 a { text-decoration: none; color: #333; }
 /* a:hover { text-decoration: underline; } */
 *{
@@ -80,6 +80,12 @@ a { text-decoration: none; color: #333; }
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+}
+.flex-pack-end {
+	-webkit-box-pack: end;
+	-webkit-justify-content:flex-end;
+	-ms-flex-pack:end;
+	justify-content: flex-end;
 }
 
 .clearfix:after {
