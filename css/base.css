@@ -6,6 +6,10 @@
 	text-align: right;
 }
 
+.ml10 {
+	margin-left: 10px;
+}
+
 .ml20 {
 	margin-left: 20px;
 }
@@ -36,6 +40,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 999;
 }
 
 .header.fixed+.contionar {
@@ -204,41 +209,21 @@
 .footer .weixin:hover .imgbox {
 	display: block;
 }
-
+.footer .top{
+	height: 36px;
+	width: 36px;
+	background: url(../img/top.png) no-repeat center center;
+	position: fixed;
+	left: 50%;
+	margin-left: 630px;
+	bottom: 50px;
+}
 .banner img,
 .banner a {
 	display: block;
 	width: 100%;
 }
 
-.coursebox {}
-
-.coursebox .coursebox-hd {
-	font-size: 36px;
-	color: #333;
-}
-
-.coursebox .coursebox-hd .menu {
-	text-align: right;
-	font-size: 16px;
-	overflow: hidden;
-	margin-right: 20px;
-}
-
-.coursebox .coursebox-hd .menu span,
-.coursebox .coursebox-hd .menu a {
-	display: block;
-}
-
-.coursebox .coursebox-hd .menu a {
-	padding: 0 10px;
-
-}
-
-.coursebox .coursebox-hd .more {
-	color: #999;
-	font-size: 15px;
-}
 
 .loginbox {
 	padding: 120px 0;
@@ -294,10 +279,12 @@
 .loginbox .imgbox+div .group+.group {
 	margin-top: 18px;
 }
-.loginbox .link{
+
+.loginbox .link {
 	color: #2fa5d0;
 	font-size: 13px;
 }
+
 .loginbox .btn {
 	margin-left: 75px;
 	display: block;
@@ -307,4 +294,14 @@
 	color: #fff;
 	border-radius: 5px;
 	font-size: 18px;
+}
+
+/* 面包屑 */
+.breadcrumbs{
+	font-size: 13px;
+	color: #333;
+	padding: 18px 0;
+}
+.breadcrumbs a{
+	color: #333;
 }

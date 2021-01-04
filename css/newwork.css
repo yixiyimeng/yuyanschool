@@ -1,0 +1,199 @@
+.filterbar {
+	padding: 35px 0;
+	font-size: 14px;
+	color: #333;
+	line-height: 1;
+}
+
+.filterbar .title {
+	color: #999;
+	padding-right: 15px;
+}
+
+.filterbar .flex+.flex {
+	margin-top: 10px;
+}
+
+.filterbar span {
+	display: inline-block;
+	color: #333;
+	padding: 10px 14px;
+	cursor: pointer;
+}
+
+.filterbar span.active {
+	color: #fff;
+	background: #0067ab;
+	border-radius: 20px;
+}
+
+.booklist {
+	padding: 55px 0 20px;
+}
+
+.booklist .book-item {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	width: 286px;
+	background: #fff;
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+
+}
+
+.booklist .book-item .imgbox {
+	width: 162px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.booklist .book-item .mask {
+	height: 210px;
+	background: #e6e6e6;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+}
+
+.booklist .book-item .mask+div {
+	position: relative;
+	z-index: 1;
+}
+
+.booklist .book-item .imgbox~div {
+	padding: 0 10px;
+}
+
+.booklist .book-item .tip {
+	color: #e02627;
+	height: 24px;
+	width: 28px;
+	border: 1px solid #e02627;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.booklist .book-item .name {
+	font-size: 18px;
+	color: #333;
+	margin: 0 5px;
+}
+
+.booklist .book-item .name+span {
+	font-size: 13px;
+	color: #999;
+}
+
+.booklist .book-item .userinfo {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #999;
+}
+
+.booklist .book-item .userinfo img {
+	border-radius: 100%;
+	display: block;
+	width: 32px;
+	margin-right: 10px;
+}
+
+.booklist .book-item:hover .mask {
+	background: #096db0;
+
+}
+
+.booklist i {
+	width: 286px;
+}
+
+.pagination {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.pagination a {
+	display: inline-block;
+	height: 38px;
+	width: 38px;
+	border: 1px solid transparent;
+	font-size: 18px;
+	color: #999;
+	vertical-align: middle;
+	line-height: 36px;
+}
+
+.pagination a.prev,
+.pagination a.next {
+	border-color: #999;
+}
+
+.pagination a.active {
+	border-color: #e02627;
+}
+
+.modbox {
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	height: 568px;
+}
+
+.modbox .tagtitle {
+	padding: 10px 35px 0;
+	font-size: 16px;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.modbox .tagtitle a {
+	color: #333;
+	position: relative;
+	padding: 15px 0 20px;
+	display: block;
+}
+
+.modbox .tagtitle a.active,
+.modbox .tagtitle a:hover {
+	color: #096db0;
+}
+
+.modbox .tagtitle a.active::after {
+	content: '';
+	display: block;
+	height: 3px;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	background: #096db0;
+	position: absolute;
+
+}
+
+.modbox.courseinfo {
+	width: 318px;
+	margin-left: 20px;
+	position: relative;
+}
+.modbox.courseinfo::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: -1px;
+	height:3px ;
+	left: 0;
+	right: 0;
+	background: #e02627;
+}
+.modbox.courselist{
+	margin-top: 40px;
+}
+.cataloglist{
+	padding: 0 35px;
+	font-size: 14px;
+	color: #333;
+}
+.cataloglist .item .item-hd{
+	height: 55px;
+	border-bottom: 1px solid #e5e5e5;
+}
