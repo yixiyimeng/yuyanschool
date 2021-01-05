@@ -1,0 +1,282 @@
+.coursebox .coursebox-hd {
+	font-size: 36px;
+	color: #333;
+	line-height: 1;
+	padding-top: 65px;
+}
+
+.coursebox .coursebox-hd .menu {
+	text-align: right;
+	font-size: 16px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.coursebox .coursebox-hd .menu span,
+.coursebox .coursebox-hd .menu a {
+	display: block;
+}
+
+.coursebox .coursebox-hd .menu a {
+	padding: 0 10px;
+
+}
+
+.coursebox .coursebox-hd .more,
+.newsbox .newsbox-hd .more {
+	color: #999;
+	font-size: 15px;
+}
+
+.coursebox .coursebox-bd .booklist {
+	margin: 35px -20px;
+}
+
+.coursebox .coursebox-bd .book-item {
+	box-shadow: 0 0 27px rgba(0, 0, 0, .1);
+	background: #fff;
+	padding: 10px;
+	margin: 0 20px;
+}
+
+.coursebox .coursebox-bd .book-item img {
+	display: block;
+	width: 140px;
+}
+
+.coursebox .coursebox-bd i {
+	display: block;
+	width: 160px;
+}
+
+.coursebox .paperox .paperlist+.paperlist {
+	margin-left: 100px;
+}
+
+.paperlist.flex-1 {
+	min-width: 0;
+}
+
+.paperlist a {
+	color: #333;
+	font-size: 14px;
+	padding: 15px 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	border-bottom: 1px solid #ebebeb;
+	position: relative;
+	width: 100%;
+}
+
+.paperlist a::before {
+	content: '';
+	display: block;
+	height: 4px;
+	background: #999;
+	width: 4px;
+	border-radius: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.paperlist a .hot {
+	width: 20px;
+	height: 14px;
+	background: url(../img/hot.png);
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.paperlist a:hover {
+	color: #0067ab;
+}
+
+.paperlist a:hover::before {
+	background: #0067ab;
+}
+
+.newsbox .paperox .paperlist {
+	width: 441px;
+}
+
+.newsbox .newsbox-hd {
+	border-bottom: 2px solid #ddd;
+	margin-top: 25px;
+
+}
+
+.newsbox .newsbox-hd .tab a {
+	font-size: 20px;
+	color: #333;
+	display: block;
+	width: 106px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.newsbox .newsbox-hd .tab a:hover,
+.newsbox .newsbox-hd .tab a.active {
+	color: #0167ab;
+}
+
+.newsbox .newsbox-hd .tab a.active::before {
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	background: #0167ab;
+}
+
+.newsbox .newsbox-hd .tab a.active::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -14px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-top-color: #0167ab;
+}
+
+.newsbox .newsbox-bd {
+	padding-bottom: 70px;
+}
+
+.teambox {
+	padding-top: 60px;
+}
+
+.teambox .title {
+	color: #333;
+	font-size: 36px;
+	text-align: center;
+	line-height: 1;
+	padding-bottom: 45px;
+}
+
+.teambox .title div+div {
+	color: #999;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.teambox .teamlist .swiper-slide {
+	box-sizing: border-box;
+	padding-bottom: 30px;
+}
+
+.teambox .teamlist .team-item {
+	margin: 0 0 40px;
+	width: 585px;
+	padding: 4px;
+	border: 1px solid #E6E6E6;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 24px;
+	color: #999;
+}
+
+.teambox .teamlist .team-item:hover {
+	border-color: #0167ab;
+}
+
+.teambox .teamlist .team-item .imgbox {
+	width: 160px;
+	height: 200px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.teambox .teamlist .team-item .imgbox img {
+	height: 100%;
+}
+
+.teambox .teamlist .team-item .name {
+	padding-top: 30px;
+	color: #0167ab;
+	font-size: 18px;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+
+.teambox .teamlist .team-item .info {
+	color: #666;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #e6e6e6;
+	overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+	height: 12px;
+	width: 12px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #0167ab;
+}
+
+.teamlist {
+	position: relative;
+	padding-bottom: 55px;
+}
+
+.teamlist .next,
+.teamlist .prev {
+	height: 61px;
+	width: 37px;
+	display: block;
+	position: absolute;
+	top: 45%;
+	background: url(../img/prev.png) no-repeat center center;
+	transform: translateY(-50%);
+
+}
+
+.teamlist .prev {
+	left: -80px;
+	background: url(../img/next.png) no-repeat center center;
+	transform: translateY(-50%) scaleX(-1);
+}
+
+.teamlist .prev.swiper-button-disabled {
+	background-image: url(../img/prev.png);
+	transform: translateY(-50%) scaleX(1);
+}
+
+.teamlist .next {
+	right: -80px;
+	background: url(../img/next.png) no-repeat center center;
+}
+
+
+.teamlist .next.swiper-button-disabled {
+	background-image: url(../img/prev.png);
+	transform: translateY(-50%) scaleX(-1);
+}
+
+.teamlist .more {
+	margin: 30px auto;
+	display: block;
+	width: 200px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #0167ab;
+	color: #0167ab;
+	text-align: center;
+	line-height: 48px;
+	font-size: 18px;
+}

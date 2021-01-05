@@ -2,8 +2,25 @@
 	background: #f5f5f5;
 }
 
+.text-right {
+	text-align: right;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
 .ml20 {
 	margin-left: 20px;
+}
+
+.bgfff {
+	background: #fff;
+}
+
+.imgbox img {
+	display: block;
+	width: 100%;
 }
 
 .w1200 {
@@ -16,6 +33,18 @@
 .header {
 	background: #fff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.header.fixed+.contionar {
+	padding-top: 120px;
 }
 
 .topbar {
@@ -75,11 +104,13 @@
 	display: block;
 	background: url(../img/search.png) no-repeat center center;
 }
-.header .navbar .searchbar .dropdown{
+
+.header .navbar .searchbar .dropdown {
 	position: relative;
 	width: 95px;
 	text-align: center;
 }
+
 .header .navbar .searchbar .dropdown .txt {
 	line-height: 36px;
 	background: url(../img/arrow.png) right center no-repeat;
@@ -87,14 +118,190 @@
 }
 
 .header .navbar .searchbar .dropdown ul {
-	position: absolute;border: 1px solid #ccc;
+	position: absolute;
+	border: 1px solid #ccc;
 	border-radius: 4px;
 	left: 0;
 	width: 94px;
 	background: #fff;
 	display: none;
 }
-.header .navbar .searchbar .dropdown ul li a{
+
+.header .navbar .searchbar .dropdown ul li a {
 	display: block;
 	padding: 10px 0;
+}
+
+.header .navbar .navmenu {
+	font-size: 16px;
+	margin-right: 50px;
+}
+
+.header .navbar .navmenu a {
+	color: #333;
+	margin: 0 20px;
+	display: block;
+	line-height: 76px;
+	border-bottom: 3px solid transparent;
+
+}
+
+.header .navbar .navmenu a.active {
+	color: #0167ab;
+	border-bottom-color: #0167ab;
+	font-weight: bold;
+}
+
+.footer {
+	color: #999;
+	font-size: 12px;
+	background: #262626;
+	padding: 30px 0;
+}
+
+.footer .navmenu {
+	margin-bottom: 55px;
+}
+
+.footer .navmenu a {
+	color: #dbdbdb;
+	font-size: 14px;
+}
+
+.footer .navmenu a+a {
+	margin-left: 30px;
+}
+
+.footer p+p {
+	margin-top: 15px;
+}
+
+.footer .weixin {
+	position: relative;
+}
+
+.footer .weixin div:first-child {
+	color: #fff;
+	font-size: 12px;
+	background: url(../img/weixin.png) 98px center no-repeat;
+	width: 141px;
+	height: 34px;
+	border: 1px solid #999;
+	border-radius: 50px;
+	line-height: 32px;
+	padding-left: 20px;
+
+}
+
+.footer .weixin .imgbox {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	position: absolute;
+	width: 128px;
+	top: -165px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+
+.footer .weixin:hover .imgbox {
+	display: block;
+}
+.footer .top{
+	height: 36px;
+	width: 36px;
+	background: url(../img/top.png) no-repeat center center;
+	position: fixed;
+	left: 50%;
+	margin-left: 630px;
+	bottom: 50px;
+}
+.banner img,
+.banner a {
+	display: block;
+	width: 100%;
+}
+
+
+.loginbox {
+	padding: 120px 0;
+}
+
+.loginbox>div {
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.loginbox .imgbox {
+	width: 700px;
+}
+
+.loginbox .imgbox+div .tab {
+	height: 70px;
+	text-align: center;
+	background: #e5e5e5;
+	color: #333;
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.loginbox .imgbox+div .tab .active {
+	background: #fff;
+	color: #0d6aab;
+}
+
+.loginbox .imgbox+div form {
+	margin-top: 70px;
+}
+
+.loginbox .imgbox+div .group {
+	margin-right: 75px;
+	font-size: 15px;
+}
+
+.loginbox .imgbox+div .group label {
+	width: 140px;
+	text-align: right;
+	padding-right: 20px;
+	color: #333;
+
+}
+
+.loginbox .imgbox+div .group input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	line-height: 44px;
+	padding-left: 20px;
+}
+
+.loginbox .imgbox+div .group+.group {
+	margin-top: 18px;
+}
+
+.loginbox .link {
+	color: #2fa5d0;
+	font-size: 13px;
+}
+
+.loginbox .btn {
+	margin-left: 75px;
+	display: block;
+	text-align: center;
+	line-height: 45px;
+	background: #1877b9;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+/* 面包屑 */
+.breadcrumbs{
+	font-size: 13px;
+	color: #333;
+	padding: 18px 0;
+}
+.breadcrumbs a{
+	color: #333;
 }
