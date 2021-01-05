@@ -175,25 +175,90 @@
 	margin-left: 20px;
 	position: relative;
 }
-.modbox.courseinfo::after{
+
+.modbox.courseinfo::after {
 	content: '';
 	display: block;
 	position: absolute;
 	top: -1px;
-	height:3px ;
+	height: 3px;
 	left: 0;
 	right: 0;
 	background: #e02627;
 }
-.modbox.courselist{
+
+.modbox.courselist {
 	margin-top: 40px;
 }
-.cataloglist{
+
+.cataloglist {
 	padding: 0 35px;
 	font-size: 14px;
 	color: #333;
+	min-height: 0;
+	overflow: auto;
 }
-.cataloglist .item .item-hd{
-	height: 55px;
+
+.cataloglist .item .item-hd {
+	height: 50px;
 	border-bottom: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+
+.cataloglist .item .item-hd .arrow {
+	color: #999;
+	font-size: 14px;
+	padding-right: 25px;
+	background: url(../img/arrow2.png) right center no-repeat;
+}
+
+.cataloglist .item .item-hd .name {
+	width: 180px;
+	display: inline-block;
+}
+
+
+.cataloglist .item .item-bd {
+	padding: 10px 0;
+	display: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.cataloglist .item.open .item-bd {
+	display: block;
+
+}
+
+.cataloglist .item .item-bd a {
+	display: block;
+	padding: 10px 0;
+}
+
+.courseinfo {
+	padding: 0 20px;
+}
+
+.courseinfo .tip {
+	color: #999;
+	font-size: 13px;
+
+}
+
+.courseinfo .tip .icon {
+	height: 40px;
+	width: 36px;
+	background: #f0f0f0 url(../img/start.png) no-repeat center center;
+	border-radius: 0 0 50px 50px;
+	margin-right: 10px;
+}
+
+.courseinfo .bookinfo {
+	padding: 23px 0 20px;
+	border-bottom: 1px dashed #999;
+	color: #999;
+	font-size: 14px;
+}
+
+.courseinfo .bookinfo img {
+	width: 60px;
 }

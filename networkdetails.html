@@ -55,19 +55,111 @@
 						<a href="javascript:;" class="active">课程目录</a>
 					</div>
 					<div class="cataloglist flex-1">
-						<div class="item">
-							<div class="item-hd flex flex-pack-justify">
-								<div class="flex-1"><span>第一章三角恒等变形</span>
-								<span>5课时</span></div>
-								<span>展开</span>
+						<div class="item open">
+							<div class="item-hd flex flex-pack-justify flex-align-center">
+								<div class="flex-1">
+									<span class="name">第一章三角恒等变形</span>
+									<span>5课时</span>
+								</div>
+								<span class="arrow">展开</span>
 							</div>
 							<div class="item-bd">
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-hd flex flex-pack-justify flex-align-center">
+								<div class="flex-1">
+									<span class="name">第二章三角恒等变形</span>
+									<span>5课时</span>
+								</div>
+								<span class="arrow">展开</span>
+							</div>
+							<div class="item-bd">
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-hd flex flex-pack-justify flex-align-center">
+								<div class="flex-1">
+									<span class="name">第三章三角恒等变形</span>
+									<span>5课时</span>
+								</div>
+								<span class="arrow">展开</span>
+							</div>
+							<div class="item-bd">
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-hd flex flex-pack-justify flex-align-center">
+								<div class="flex-1">
+									<span class="name">第四章三角恒等变形</span>
+									<span>5课时</span>
+								</div>
+								<span class="arrow">展开</span>
+							</div>
+							<div class="item-bd">
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-hd flex flex-pack-justify flex-align-center">
+								<div class="flex-1">
+									<span class="name">第五章三角恒等变形</span>
+									<span>5课时</span>
+								</div>
+								<span class="arrow">展开</span>
+							</div>
+							<div class="item-bd">
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
+								<a href="">第1课时三角函数定义知识梳理</a>
 								<a href="">第1课时三角函数定义知识梳理</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="courseinfo modbox"></div>
+				<div class="courseinfo modbox">
+					<div class="tip flex flex-align-center">
+						<div class="icon"></div>
+						<div>22130</div>
+					</div>
+					<div class="bookinfo flex flex-align-center">
+						<img src="img/book.jpg">
+						<div>
+							<div>经典题精选精讲</div>
+							<div>分类：物理 </div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="modbox courselist w1200"></div>
 		</div>
@@ -98,5 +190,7 @@
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-
+	$('.cataloglist .item .item-hd').click(function() {
+		$(this).parent().toggleClass('open')
+	})
 </script>
