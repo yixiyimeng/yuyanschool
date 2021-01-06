@@ -295,7 +295,36 @@
 	border-radius: 5px;
 	font-size: 18px;
 }
-
+.success{
+	text-align: center;
+	padding: 180px 0;
+}
+.success img{
+	display: block;
+	margin: 0 auto 20px;
+}
+.success p{
+	color: #0d6aab;
+	font-weight: bold;
+	font-size: 18px;
+}
+.success p+p{
+	color: #666;
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.success .reback{
+	color: #0d6aab;
+	font-size: 18px;
+	border: 1px solid #0d6aab;
+	border-radius: 5px;
+	width: 180px;
+	height: 46px;
+	display: block;
+	margin: 50px auto;
+	line-height: 44px;
+}
 /* 面包屑 */
 .breadcrumbs{
 	font-size: 13px;
