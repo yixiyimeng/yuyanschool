@@ -306,7 +306,8 @@
 	margin-bottom: 5px;
 }
 
-.courselist-box {
+.courselist-box,
+.commentbox {
 	margin-bottom: 50px;
 	height: auto;
 	margin-top: 40px;
@@ -374,18 +375,134 @@
 .courselist-box .courselist.videolist .item .btnlist {
 	width: 270px;
 }
-.courselist-box .courselist.videolist .item .btnlist .btn1{
+
+.courselist-box .courselist.videolist .item .btnlist .btn1 {
 	width: 156px;
 	border-color: #096bb4;
 	color: #096bb4;
 }
-.courselist-box .courselist.videolist .item .btnlist .btn3{
+
+.courselist-box .courselist.videolist .item .btnlist .btn3 {
 	width: 156px;
 	border-color: #cb1f20;
 	color: #cb1f20;
 }
-.courselist-box .courselist.videolist .item .btnlist .btn4{
+
+.courselist-box .courselist.videolist .item .btnlist .btn4 {
 	width: 156px;
 	border-color: #b2b2b2;
 	color: #b2b2b2;
+}
+
+.courseinfo .ranklist a {
+	color: #333;
+	font-size: 15px;
+	padding: 20px 0;
+	display: block;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.videobox {
+	position: relative;
+	height: 486px;
+}
+
+.videobox .mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(../img/play.png) no-repeat center center rgba(0, 0, 0, .5);
+}
+
+.rankbox.modbox {
+	height: 486px;
+}
+
+.sendcommentbox,
+.commentlist {
+	padding: 35px 35px 0;
+}
+
+.sendcommentbox textarea {
+	background: #fff;
+	display: block;
+	width: 100%;
+	height: 180px;
+	outline: none;
+	resize: none;
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.sendcommentbox .submit {
+	width: 126px;
+	height: 36px;
+	color: #fff;
+	background: #1f74b3;
+	line-height: 36px;
+	text-align: center;
+	display: block;
+	margin-top: 8px;
+}
+
+.commentlist .commentlist-hd {
+	background: #f4f4f4;
+	border: 1px solid #e6e6e6;
+	height: 64px;
+	color: #333;
+}
+
+.commentlist .commentlist-hd .percentage {
+	width: 125px;
+	text-align: center;
+}
+
+.commentlist .commentlist-hd .percentage .num {
+	color: #d41e0b;
+	font-size: 26px;
+	line-height: 40px;
+}
+
+.commentlist .commentlist-hd .line {
+	width: 1px;
+	height: 46px;
+	background: #e6e6e6;
+}
+
+.commentlist .commentlist-hd .checkbox {
+	margin-left: 35px;
+}
+
+.commentlist .commentlist-hd .checkbox input,
+.commentlist .commentlist-hd .checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.commentlist .commentlist-bd {
+	margin-bottom: 35px;
+}
+.commentlist .commentlist-bd .item {
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #e6e6e6;
+	color: #333;
+	font-size: 13px;
+	line-height: 1;
+}
+
+.commentlist .commentlist-bd .item .imgbox {
+	margin-right: 20px;
+	height: 42px;
+	width: 42px;
+	border-radius: 100%;
+}
+
+.commentlist .commentlist-bd .item .time {
+	color: #999;
+	font-size: 12px;
+	margin-top: 10px;
 }
