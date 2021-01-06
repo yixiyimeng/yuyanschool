@@ -110,7 +110,7 @@
 
 .pagination {
 	text-align: center;
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 }
 
 .pagination a {
@@ -136,8 +136,13 @@
 .modbox {
 	border: 1px solid #e5e5e5;
 	background: #fff;
-	height: 568px;
 	box-sizing: border-box;
+
+}
+
+.catalog.modbox,
+.modbox.courseinfo {
+	height: 568px;
 }
 
 .modbox .tagtitle {
@@ -309,7 +314,6 @@
 .courselist-box,
 .commentbox {
 	margin-bottom: 50px;
-	height: auto;
 	margin-top: 40px;
 }
 
@@ -482,9 +486,11 @@
 	display: inline-block;
 	vertical-align: middle;
 }
+
 .commentlist .commentlist-bd {
 	margin-bottom: 35px;
 }
+
 .commentlist .commentlist-bd .item {
 	display: block;
 	padding: 20px;
