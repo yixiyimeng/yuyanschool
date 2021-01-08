@@ -108,93 +108,17 @@
 	width: 286px;
 }
 
-.pagination {
-	text-align: center;
-	margin-bottom: 60px;
-}
-
-.pagination a {
-	display: inline-block;
-	height: 38px;
-	width: 38px;
-	border: 1px solid transparent;
-	font-size: 18px;
-	color: #999;
-	vertical-align: middle;
-	line-height: 36px;
-}
-
-.pagination a.prev,
-.pagination a.next {
-	border-color: #999;
-}
-
-.pagination a.active {
-	border-color: #e02627;
-}
-
-.modbox {
-	border: 1px solid #e5e5e5;
-	background: #fff;
-	box-sizing: border-box;
-
-}
-
 .catalog.modbox,
 .modbox.courseinfo {
 	height: 568px;
 }
 
-.modbox .tagtitle {
-	padding: 10px 25px 0;
-	font-size: 16px;
-	color: #333;
-	border-bottom: 1px solid #e5e5e5;
-}
 
-.modbox .tagtitle a,
-.modbox .tagtitle span {
-	color: #333;
-	position: relative;
-	padding: 15px 0 20px;
-	display: block;
-	margin: 0 10px;
-	min-width: 70px;
-	text-align: center;
-}
-
-.modbox .tagtitle a.active,
-.modbox .tagtitle a:hover {
-	color: #096db0;
-}
-
-.modbox .tagtitle a.active::after {
-	content: '';
-	display: block;
-	height: 3px;
-	left: 0;
-	right: 0;
-	bottom: -1px;
-	background: #096db0;
-	position: absolute;
-
-}
 
 .modbox.courseinfo {
 	width: 318px;
 	margin-left: 20px;
 	position: relative;
-}
-
-.modbox.courseinfo::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: -1px;
-	height: 3px;
-	left: 0;
-	right: 0;
-	background: #e02627;
 }
 
 .modbox.courselist {
@@ -244,25 +168,6 @@
 	padding: 10px 0;
 }
 
-.courseinfo {
-	padding: 0 20px 30px;
-	box-sizing: border-box;
-}
-
-.courseinfo .tip {
-	color: #999;
-	font-size: 13px;
-
-}
-
-.courseinfo .tip .icon {
-	height: 40px;
-	width: 36px;
-	background: #f0f0f0 url(../img/start.png) no-repeat center center;
-	border-radius: 0 0 50px 50px;
-	margin-right: 10px;
-}
-
 .courseinfo .bookinfo {
 	padding: 23px 0 20px;
 	border-bottom: 1px dashed #999;
@@ -309,93 +214,6 @@
 	font-size: 14px;
 	color: #333;
 	margin-bottom: 5px;
-}
-
-.courselist-box,
-.commentbox {
-	margin-bottom: 50px;
-	margin-top: 40px;
-}
-
-.courselist-box .courselist {
-	padding: 0 35px 40px;
-}
-
-.courselist-box .courselist .item {
-	height: 70px;
-	border-bottom: 1px solid #e6e6e6;
-	font-size: 16px;
-	color: #666;
-}
-
-.courselist-box .courselist .item .num {
-	width: 60px;
-	text-align: center;
-	margin-right: 10px;
-}
-
-.courselist-box .courselist .item .icon {
-	width: 20px;
-	display: block;
-	margin-right: 10px;
-
-}
-
-.courselist-box .courselist .item .time {
-	color: #999;
-	font-size: 15px;
-	margin-right: 30px;
-}
-
-.courselist-box .courselist .item .btnlist {
-	width: 300px;
-}
-
-.courselist-box .courselist .item .btnlist a {
-	width: 90px;
-	height: 40px;
-	border: 1px solid #cb1f20;
-	display: block;
-	border-radius: 5px;
-	line-height: 40px;
-	text-align: center;
-	color: #cb1f20;
-}
-
-.courselist-box .courselist .item .btnlist a+a {
-	margin-left: 10px;
-}
-
-.courselist-box .courselist .item .btnlist .btn2 {
-	border-color: #096bb4;
-	color: #096bb4;
-}
-
-.courselist-box .courselist .item .btnlist .btn3 {
-	border-color: #b2b2b2;
-	color: #b2b2b2;
-}
-
-.courselist-box .courselist.videolist .item .btnlist {
-	width: 270px;
-}
-
-.courselist-box .courselist.videolist .item .btnlist .btn1 {
-	width: 156px;
-	border-color: #096bb4;
-	color: #096bb4;
-}
-
-.courselist-box .courselist.videolist .item .btnlist .btn3 {
-	width: 156px;
-	border-color: #cb1f20;
-	color: #cb1f20;
-}
-
-.courselist-box .courselist.videolist .item .btnlist .btn4 {
-	width: 156px;
-	border-color: #b2b2b2;
-	color: #b2b2b2;
 }
 
 .courseinfo .ranklist a {

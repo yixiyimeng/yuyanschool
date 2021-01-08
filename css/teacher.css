@@ -1,0 +1,73 @@
+
+.tabbox .teacherlist .teacher-item {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+	width: 585px;
+	height: 220px;
+	box-sizing: border-box;
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 30px;
+}
+
+.tabbox .teacherlist .teacher-item .imgbox {
+	border-radius: 5px;
+	overflow: hidden;
+	margin-right: 20px;
+	width: 160px;
+}
+
+.tabbox .teacherlist .teacher-item .name {
+	color: #0166ad;
+	font-size: 18px;
+}
+
+.tabbox .teacherlist .teacher-item .info {
+	color: #666;
+	padding-top: 10px;
+	border-top: 1px solid #e6e6e6;
+	margin-top: 10px;
+}
+
+.tabbox .teacherlist+.pagination {
+	margin-top: 60px;
+}
+
+.teacher-baseinfo {
+	padding: 20px 10px 10px;
+	color: #999;
+	font-size: 13px;
+}
+
+.teacher-baseinfo .imgbox {
+	width: 135px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-right: 35px;
+}
+
+.teacher-baseinfo .name {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.teacher-baseinfo .des {
+	margin-top: 25px;
+	line-height: 26px;
+	color: #333;
+	font-size: 14px;
+}
+
+/* 教师详情 */
+.teacherinfo {
+	font-size: 14px;
+	color: #333;
+	line-height: 42px;
+	padding: 30px 50px 60px;
+	display: block;
+}
