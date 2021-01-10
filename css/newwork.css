@@ -216,13 +216,6 @@
 	margin-bottom: 5px;
 }
 
-.courseinfo .ranklist a {
-	color: #333;
-	font-size: 15px;
-	padding: 20px 0;
-	display: block;
-	border-bottom: 1px solid #e6e6e6;
-}
 
 .videobox {
 	position: relative;
@@ -241,6 +234,15 @@
 
 .rankbox.modbox {
 	height: 486px;
+	width: 318px;
+}
+
+.rankbox.modbox .ranklist a {
+	color: #333;
+	font-size: 15px;
+	padding: 20px 0;
+	display: block;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .sendcommentbox,

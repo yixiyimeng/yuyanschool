@@ -68,12 +68,19 @@
 
 .topbar .btnlist a {
 	color: #fff;
+	vertical-align: middle;
 }
 
 .topbar .btnlist span {
 	color: #999;
+	vertical-align: middle;
 }
 
+.topbar .btnlist img,
+.topbar .btnlist span{
+	color: #fff;
+	vertical-align: middle;
+}
 .topbar .phone {
 	margin-left: 30px;
 	background: url(../img/phone.png) no-repeat left center;
@@ -163,6 +170,12 @@
 	border-bottom-color: #0167ab;
 	font-weight: bold;
 }
+
+.header .navbar .title {
+	color: #333;
+	font-size: 16px;
+}
+
 
 .footer {
 	color: #999;
@@ -353,7 +366,7 @@
 }
 
 .breadcrumbs a {
-	color: #333;
+	color: #999;
 }
 
 /* 分页 */
