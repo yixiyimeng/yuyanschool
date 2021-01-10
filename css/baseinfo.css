@@ -1,0 +1,48 @@
+.leftside {
+	width: 238px;
+	margin-right: 20px;
+	min-height: 608px;
+}
+
+.leftside .title {
+	color: #fff;
+	background: #1877b9;
+	line-height: 52px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.leftside a {
+	display: block;
+	line-height: 45px;
+	border-bottom: 1px solid #e6e6e6;
+	font-size: 15px;
+	color: #333;
+	padding-left: 30px;
+	font-weight: bold;
+	position: relative;
+	background: url(../img/arrow3.png) no-repeat 200px center;
+}
+
+.leftside .active a {
+	color: #1a6ea8;
+
+}
+
+.leftside .badge {
+	position: absolute;
+	font-style: normal;
+	color: #fff;
+	font-size: 12px;
+	background: #e02627;
+	line-height: 17px;
+	border-radius: 20px;
+	padding: 0 7px;
+	top: 10px;
+	left: 84px;
+}
+
+.main {
+	min-height: 608px;
+	padding: 20px 36px;
+}
