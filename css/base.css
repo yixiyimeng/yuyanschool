@@ -17,23 +17,37 @@
 .ml100 {
 	margin-left: 100px !important;
 }
-.mt20{
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
 	margin-top: 20px;
 }
+
 .mt40 {
 	margin-top: 40px;
 }
-.mt50{
+
+.mt50 {
 	margin-top: 50px;
 }
+
 .mb50 {
 	margin-bottom: 50px;
 }
-.mb60{
+
+.mb60 {
 	margin-bottom: 60px;
 }
+
 .bgfff {
 	background: #fff;
+}
+
+.color-grey {
+	color: #666;
 }
 
 .imgbox img {
@@ -403,7 +417,7 @@
 .forgetPwd .link {
 	color: #2fa5d0;
 	font-size: 13px;
-	
+
 }
 
 .success {

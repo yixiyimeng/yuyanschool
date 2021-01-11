@@ -46,3 +46,254 @@
 	min-height: 608px;
 	padding: 20px 36px;
 }
+
+.modbox.main .modbox-hd {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	padding: 20px 10px;
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.modbox.main .modbox-hd::before {
+	content: '';
+	display: block;
+	height: 16px;
+	width: 3px;
+	background: #2076b2;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.baseinfo {
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+.input-group {
+	font-size: 14px;
+	color: #666;
+}
+
+.input-group label {
+	width: 4em;
+	text-align: right;
+	display: block;
+	margin-right: 6px;
+	line-height: 42px;
+}
+
+.input-group label i {
+	color: #e6212a;
+}
+
+.modbox.main .inputbox {
+	width: 250px;
+	border: 1px solid #e5e5e5;
+	line-height: 40px;
+	padding-left: 20px;
+	color: #666;
+}
+
+.modbox.main select.inputbox {
+	appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	background: url(../img/arrow4.png) no-repeat 220px center;
+}
+
+.input-group .upload {
+	color: #999;
+	font-size: 13px;
+}
+
+.input-group .upload .imgbox {
+	width: 160px;
+	height: 160px;
+	margin-bottom: 15px;
+}
+
+.input-group .upload .uploadBtn {
+	width: 116px;
+	height: 36px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	color: #333;
+	position: relative;
+	text-align: center;
+	line-height: 34px;
+	margin-right: 12px;
+	overflow: hidden;
+}
+
+.input-group .upload .uploadBtn input {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 400px;
+	opacity: 0;
+}
+
+.input-group input[type=submit] {
+	color: #fff;
+	font-size: 16px;
+	background: #1a6da8;
+	display: block;
+	width: 120px;
+	line-height: 38px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.filterbar {
+	margin-top: 24px;
+	margin-left: 5px;
+}
+
+.modbox.main .filterbar select.inputbox {
+	width: 168px;
+	background-position: 130px center;
+	margin-left: 5px;
+}
+
+.modbox.main .filterbar .searchBtn {
+	border: 1px solid #e5e5e5;
+	line-height: 40px;
+	display: block;
+	width: 85px;
+	text-align: center;
+	color: #666;
+	background: none;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.historylist .item {
+	font-size: 13px;
+	color: #333;
+	padding: 20px 0;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.historylist .item .time {
+	color: #999;
+}
+
+.pagination {
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.pagination a,
+.pagination span {
+	text-align: center;
+	width: 33px;
+	height: 33px;
+	line-height: 31px;
+	font-size: 13px;
+	box-sizing: border-box;
+	color: #999;
+	border-color: #cfcfcf;
+}
+
+.pagination a.active {
+	color: #2076b2;
+	border-color: #2076b2;
+}
+
+.pagination a.prev,
+.pagination a.next {
+	font-size: 26px;
+	font-family: '微软雅黑';
+}
+
+.searchbar {
+	margin-top: 30px;
+	font-size: 13px;
+}
+
+.searchbar .searchtxt {
+	width: 218px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	height: 38px;
+	padding-left: 15px;
+}
+
+.searchbar .searchtxt input {
+	margin-left: 8px;
+	border: none;
+
+}
+
+.searchbar .searchBtn {
+	color: #fff;
+	background: #2076b2;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	color: #fff;
+	width: 104px;
+	margin-left: 10px;
+}
+
+.subtitle {
+	margin: 30px 0 15px 25px;
+	color: #333;
+	font-size: 16px;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	font-size: 13px;
+	color: #333;
+}
+
+.table th {
+	font-size: 14px;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 45px;
+	font-weight: normal;
+	width: 10%;
+}
+
+.table.ordertable th:first-child{
+	width: 60%;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.table td {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 20px;
+}
+
+.ordertable td:first-child {
+	text-align: left;
+	padding: 25px;
+}
+
+.ordertable td:first-child .imgbox {
+	width: 118px;
+	margin-right: 25px;
+}
+.commenttable th:first-child{
+	width: 60%;
+}.commenttable td:first-child{
+	padding: 20px 15px;
+	text-align: left;
+}.commenttable td:first-child .time{
+	margin-bottom: 20px;
+	color: #666;
+}
