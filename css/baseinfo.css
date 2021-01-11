@@ -4,15 +4,47 @@
 	min-height: 608px;
 }
 
+.leftside.leftside--bg {
+	background: #fff url(../img/bg.png) no-repeat center 140px;
+}
+
 .leftside .title {
 	color: #fff;
 	background: #1877b9;
 	line-height: 52px;
 	font-size: 20px;
 	text-align: center;
+
 }
 
-.leftside a {
+.leftside .teacherinfo {
+	background: rgba(24, 119, 185, .9);
+	color: #fff;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.leftside .teacherinfo .avatar {
+	height: 80px;
+	width: 80px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	background: no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.leftside .teacherinfo .edit{
+	color: #91b7d1;
+	font-size: 13px;
+	margin-top: 10px;
+	display: block;
+}
+.leftside .teacherinfo .name {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.leftside ul a {
 	display: block;
 	line-height: 45px;
 	border-bottom: 1px solid #e6e6e6;
@@ -23,7 +55,9 @@
 	position: relative;
 	background: url(../img/arrow3.png) no-repeat 200px center;
 }
-
+.leftside ul li:last-child a{
+	border-bottom:none
+}
 .leftside .active a {
 	color: #1a6ea8;
 
@@ -304,17 +338,21 @@
 }
 
 /* 系统消息 */
-.msglist,.recommendlist {
+.msglist,
+.recommendlist {
 	color: #333;
 	font-size: 13px;
 	margin-top: 10px;
 }
 
-.msglist .item,.recommendlist .item {
+.msglist .item,
+.recommendlist .item {
 	padding: 20px 0;
 	border-bottom: 1px solid #eaeaea;
 }
-.msglist .item .state,.recommendlist .item .state{
+
+.msglist .item .state,
+.recommendlist .item .state {
 	color: #fff;
 	background: #3e85b7;
 	border-radius: 50px;
@@ -324,46 +362,58 @@
 	line-height: 22px;
 	margin-left: 20px;
 }
+
 .msglist .item .state.read,
-.recommendlist .item .state.read{
+.recommendlist .item .state.read {
 	background: #efefef;
 	color: #999;
 }
+
 .msglist .item .flex,
-.recommendlist .item .flex{
+.recommendlist .item .flex {
 	min-width: 0;
 }
+
 .msglist .item .ellipsis,
-.recommendlist .item .ellipsis{
+.recommendlist .item .ellipsis {
 	max-width: calc(100% - 100px);
 }
+
 .msglist .item .time,
 .recommendlist .item .time,
-.recommendlist .item .download{
+.recommendlist .item .download {
 	color: #999;
 	text-align: right;
 }
+
 .recommendlist .item .time,
-.recommendlist .item img{
+.recommendlist .item img {
 	margin: 0 13px;
 }
-.checkpwd{
+
+.checkpwd {
 	width: 350px;
 	margin: 95px auto;
-}.checkpwd .input-group label{
+}
+
+.checkpwd .input-group label {
 	display: block;
 	color: #333;
 	font-size: 15px;
 	margin-right: 20px;
-}.checkpwd .input-group input{
+}
+
+.checkpwd .input-group input {
 	width: 286px;
 	height: 46px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding-left: 20px;
 }
-.checkpwd .submitBtn{
-	display: block;border: none;
+
+.checkpwd .submitBtn {
+	display: block;
+	border: none;
 	color: #fff;
 	text-align: center;
 	line-height: 46px;
