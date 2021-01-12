@@ -33,12 +33,14 @@
 	background-size: cover;
 	margin: 0 auto;
 }
-.leftside .teacherinfo .edit{
+
+.leftside .teacherinfo .edit {
 	color: #91b7d1;
 	font-size: 13px;
 	margin-top: 10px;
 	display: block;
 }
+
 .leftside .teacherinfo .name {
 	font-size: 18px;
 	margin-top: 15px;
@@ -55,9 +57,11 @@
 	position: relative;
 	background: url(../img/arrow3.png) no-repeat 200px center;
 }
-.leftside ul li:last-child a{
-	border-bottom:none
+
+.leftside ul li:last-child a {
+	border-bottom: none
 }
+
 .leftside .active a {
 	color: #1a6ea8;
 
@@ -139,7 +143,7 @@
 	-ms-appearance: none;
 	-moz-appearance: none;
 	-o-appearance: none;
-	background: url(../img/arrow4.png) no-repeat 220px center;
+	background: url(../img/arrow4.png) no-repeat calc(100% - 10px) center;
 }
 
 .input-group .upload {
@@ -279,6 +283,18 @@
 	margin-left: 10px;
 }
 
+.searchbar .add {
+	border: 1px solid #ccc;
+	height: 38px;
+	width: 154px;
+	border-radius: 4px;
+	display: block;
+	color: #333;
+	font-size: 13px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
 .subtitle {
 	margin: 30px 0 15px 25px;
 	color: #333;
@@ -299,6 +315,10 @@
 	line-height: 45px;
 	font-weight: normal;
 	width: 10%;
+}
+
+.table .bg-grey th {
+	background: #f7f7f7;
 }
 
 .table.ordertable th:first-child {
@@ -335,6 +355,26 @@
 .commenttable td:first-child .time {
 	margin-bottom: 20px;
 	color: #666;
+}
+
+.studytable th {
+	width: 15%;
+}
+
+.studytable td {
+	padding: 15px 0;
+}
+
+.studytable th:first-child {
+	width: 75px;
+}
+
+.studytable th:last-child {
+	width: 10%;
+}
+
+.studytable th:nth-child(2) {
+	width: calc(60% - 75px);
 }
 
 /* 系统消息 */
@@ -421,4 +461,10 @@
 	width: 100%;
 	background: #1877b9;
 	font-size: 18px;
+}
+.col-3{
+	box-sizing: border-box;
+}
+.col-3>div {
+	width: 30%;
 }

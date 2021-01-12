@@ -47,9 +47,14 @@
 }
 
 .color-grey {
-	color: #666;
+	color: #999;
 }
-
+.color-green{
+	color: #64a91a;
+}
+.color-red{
+	color: #ca2131;
+}
 .imgbox img {
 	display: block;
 	width: 100%;
