@@ -26,6 +26,10 @@
 	margin-top: 20px;
 }
 
+.mt30 {
+	margin-top: 30px;
+}
+
 .mt40 {
 	margin-top: 40px;
 }
@@ -49,11 +53,16 @@
 .color-grey {
 	color: #999;
 }
-.color-green{
+
+.color-green {
 	color: #64a91a;
 }
-.color-red{
+
+.color-red {
 	color: #ca2131;
+}
+.color-black{
+	color: #333;
 }
 .imgbox img {
 	display: block;

@@ -229,6 +229,7 @@
 	text-align: left;
 	margin-top: 20px;
 	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 .pagination a,
@@ -265,6 +266,7 @@
 	border: 1px solid #ccc;
 	height: 38px;
 	padding-left: 15px;
+	box-sizing: border-box;
 }
 
 .searchbar .searchtxt input {
@@ -307,6 +309,7 @@
 	border: 1px solid #e5e5e5;
 	font-size: 13px;
 	color: #333;
+	table-layout: fixed;
 }
 
 .table th {
@@ -361,7 +364,8 @@
 	width: 15%;
 }
 
-.studytable td {
+.studytable td,
+.cashouttable td {
 	padding: 15px 0;
 }
 
@@ -377,6 +381,38 @@
 	width: calc(60% - 75px);
 }
 
+.studytable .forwardBtn {
+	color: #fff;
+	width: 60px;
+	height: 23px;
+	display: block;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 50px;
+	background: #2076b2;
+	margin: 0 auto;
+}
+
+.cashouttable th {
+	width: 15%;
+}
+
+.cashouttable th:first-child,
+.cashouttable td:first-child {
+	width: 70%;
+	text-align: left;
+	padding-left: 32px;
+}
+
+	{
+	width: 80%;
+	text-align: left;
+}
+
+.studytable .flex-1 {
+	min-width: 0;
+}
+
 /* 系统消息 */
 .msglist,
 .recommendlist {
@@ -387,8 +423,9 @@
 
 .msglist .item,
 .recommendlist .item {
-	padding: 20px 0;
+	padding: 15px 0;
 	border-bottom: 1px solid #eaeaea;
+	box-sizing: border-box;
 }
 
 .msglist .item .state,
@@ -462,9 +499,69 @@
 	background: #1877b9;
 	font-size: 18px;
 }
-.col-3{
+
+.col-3 {
 	box-sizing: border-box;
 }
+
 .col-3>div {
 	width: 30%;
+}
+
+.tab {
+	margin-top: 30px;
+	border: 1px solid #e5e5e5;
+}
+
+.tab .tab-link {
+	background: #f7f7f7;
+	line-height: 46px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+.tab .tab-link a {
+	color: #333;
+	font-size: 14px;
+	display: block;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.tab .tab-link a+a {
+	margin-left: 50px;
+}
+
+.tab .tab-link a.active {
+	color: #2076b2;
+}
+
+.tab .tab-link a.active::after {
+	content: '';
+	display: block;
+	height: 3px;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	background: #096db0;
+	position: absolute;
+}
+
+.tab .tab-panel.paperlist .item {
+	color: #333;
+	font-size: 13px;
+	padding: 13px 30px 13px 20px;
+	min-height: 45px;
+	box-sizing: border-box;
+}
+
+.tab .tab-panel.paperlist .item+.item {
+	border-top: 1px solid #e5e5e5;
+}
+
+.tab .tab-panel.paperlist .item .name {
+	margin-left: 10px;
+	min-width: 0;
 }
