@@ -125,8 +125,30 @@
 	line-height: 42px;
 }
 
+.input-group label.lg {
+	width: 5em;
+}
+
 .input-group label i {
 	color: #e6212a;
+}
+
+.input-group .btnlist a {
+	display: block;
+	width: 120px;
+	line-height: 38px;
+	color: #fff;
+	font-size: 16px;
+	background: #b3b3b3;
+	text-align: center;
+}
+
+.input-group .btnlist a.save {
+	background: #1a6da8;
+}
+
+.input-group .btnlist a.submit {
+	background: #b62829;
 }
 
 .modbox.main .inputbox {
@@ -144,6 +166,10 @@
 	-moz-appearance: none;
 	-o-appearance: none;
 	background: url(../img/arrow4.png) no-repeat calc(100% - 10px) center;
+}
+
+.modbox.main textarea.inputbox {
+	resize: none;
 }
 
 .input-group .upload {
@@ -393,8 +419,52 @@
 	margin: 0 auto;
 }
 
-.cashouttable th {
-	width: 15%;
+.addstudytable tr td {
+	padding: 10px 0;
+}
+
+.addstudytable th:first-child {
+	width: 60px;
+}
+
+.addstudytable th:nth-child(3) {
+	width: 140px;
+}
+
+.addstudytable th:nth-child(4) {
+	width: 180px;
+}
+
+.addstudytable th:nth-child(2) {
+	width: calc(100% - 440px);
+}
+
+.addstudytable .uploadBtn {
+	color: #fff;
+	background: #2076b2;
+	line-height: 24px;
+	border-radius: 3px;
+	display: block;
+	width: 56px;
+	margin: 0 auto;
+}
+
+.addstudytable .add,
+.addstudytable .del {
+	display: block;
+	padding-left: 30px;
+	color: #666;
+	text-align: left;
+	background: no-repeat left center;
+}
+
+.addstudytable .add {
+	background-image: url(../img/add2.png);
+}
+
+.addstudytable .del {
+	margin-left: 14px;
+	background-image: url(../img/del2.png);
 }
 
 .cashouttable th:first-child,
@@ -564,4 +634,167 @@
 .tab .tab-panel.paperlist .item .name {
 	margin-left: 10px;
 	min-width: 0;
+}
+
+/* 弹出框 */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
+	z-index: 999;
+	display: none;
+}
+
+.modal>div {
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+
+.modal .close {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: -32px;
+	right: -32px;
+	background: url(../img/close2.png);
+}
+.modal>div .modal-hd {
+	color: #333;
+	font-size: 13px;
+	text-align: center;
+	line-height: 42px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* 提交审核弹出框 */
+.examinemodal>div {
+	width: 350px;
+	height: 174px;
+	padding-top: 40px;
+	font-size: 15px;
+	color: #333;
+}
+
+.examinemodal img {
+	margin: 0 auto 15px;
+}
+
+.examinemodal .tip {
+	color: #c42323;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+/* 通讯录 */
+.addrbookmodal>div {
+	width: 320px;
+	text-align: left;
+
+}
+
+
+.addrbookmodal .search {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 10px;
+}
+
+.addrbookmodal .search input {
+	margin: 10px 0;
+	height: 36px;
+	border: 1px solid #e5e5e5;
+	border-radius: 50px;
+	display: block;
+	width: 100%;
+	text-indent: 20px;
+	line-height: 34px;
+
+}
+
+.addrbookmodal .modal-bd {
+	margin: 0 20px;
+	color: #333;
+}
+
+.addrbookmodal .check {
+	font-size: 13px;
+}
+
+.addrbookmodal .check i,
+.addrbookmodal .check span {
+	vertical-align: middle;
+}
+
+.addrbookmodal .check i {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	background: url(../img/demo/check.png) no-repeat center center;
+	background-size: contain;
+}
+
+.addrbookmodal .check.active i {
+	background-image: url(../img/demo/curcheck.png);
+}
+.addrbookmodal .modal-bd{
+	padding-bottom: 20px;
+}
+.addrbookmodal .modal-bd>ul>li>div {
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.addrbookmodal .modal-bd>ul>li>div::after {
+	content: '';
+	display: block;
+	background: url(../img/arrow3.png) no-repeat center center;
+	position: absolute;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all .3s;
+
+}
+
+.addrbookmodal .modal-bd>ul>li.open>div::after {
+	transform: rotate(90deg);
+	transform-origin: 50% 50%;
+}
+
+.addrbookmodal .modal-bd .stulist {
+	padding: 20px 0 0;
+	display: none;
+}
+
+.addrbookmodal .modal-bd .open .stulist {
+	display: block;
+}
+
+.addrbookmodal .modal-bd .stulist li {
+	cursor: pointer;
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+
+.addrbookmodal .modal-bd .stulist img {
+	border-radius: 100%;
+	display: block;
+	width: 22px;
+	margin-right: 20px;
+}
+/* 添加类型 */
+.addtypemodal>div{
+	width: 426px;
 }

@@ -192,16 +192,142 @@
 			</div>
 			<a class="top" href="javascript:;" id="goToTop"></a>
 		</div>
+		<!-- 通讯录 -->
+		<div class="modal addrbookmodal">
+			<div>
+				<a href="javascript:;" class="close"></a>
+				<div class="modal-hd">通讯录</div>
+				<div class="search">
+					<input type="text" placeholder="查找联系人..." />
+				</div>
+				<div class="modal-bd">
+					<ul>
+						<li class="open">
+							<div class="flex flex-align-center flex-pack-justify">
+								<span>高一（12）班</span>
+								<div class="check active">
+									<span>全选</span>
+									<i></i>
+								</div>
 
+							</div>
+							<ul class="stulist">
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="flex flex-align-center flex-pack-justify">
+								<span>高一（12）班</span>
+								<div class="check active">
+									<span>全选</span>
+									<i></i>
+								</div>
+
+							</div>
+							<ul class="stulist">
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="flex flex-align-center flex-pack-justify">
+								<span>高一（12）班</span>
+								<div class="check active">
+									<span>全选</span>
+									<i></i>
+								</div>
+
+							</div>
+							<ul class="stulist">
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+								<li class="flex flex-align-center">
+									<img src="img/demo/avatar2.png">
+									<span class="flex-1">高12班-梁安琪</span>
+									<div class="check"><i></i></div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 添加类型 -->
+		<div class="modal addtypemodal" style="display: block;">
+			<div>
+				<a href="javascript:;" class="close"></a>
+				<div class="modal-hd">添加类型</div>
+				<div class="modal-bd">
+					<div class="item">
+						<span>文件</span>
+						<span>（支持jpg,pdf,ppt,pptx，docx,doc,xls,xlsx）</span>
+						<div class="upload">
+							<span>上传</span>
+							<input type="file" name="" id="" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	$('.paybtn').click(function() {
-		$('.qrwin').show()
+	$('.forwardBtn').click(function() {
+		$('.addrbookmodal').show()
 	});
-	$('.qrwin .close').click(function() {
-		$('.qrwin').hide()
+	$('.addrbookmodal .close').click(function() {
+		$('.addrbookmodal').hide()
 	})
 </script>
