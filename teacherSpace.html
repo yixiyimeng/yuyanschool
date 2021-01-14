@@ -303,19 +303,70 @@
 			</div>
 		</div>
 		<!-- 添加类型 -->
-		<div class="modal addtypemodal" style="display: block;">
+		<div class="modal addtypemodal">
 			<div>
 				<a href="javascript:;" class="close"></a>
 				<div class="modal-hd">添加类型</div>
 				<div class="modal-bd">
-					<div class="item">
-						<span>文件</span>
-						<span>（支持jpg,pdf,ppt,pptx，docx,doc,xls,xlsx）</span>
+					<div class="item flex flex-align-center">
+						<span class="name">文件</span>
+						<span class="flex-1">（支持jpg,pdf,ppt,pptx，docx,doc,xls,xlsx）</span>
 						<div class="upload">
 							<span>上传</span>
 							<input type="file" name="" id="" value="" />
 						</div>
 					</div>
+					<div class="item flex flex-align-center">
+						<span class="name">视频</span>
+						<span class="flex-1">（支持MP4）</span>
+						<div class="upload">
+							<span>上传</span>
+							<input type="file" name="" id="" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 上传确定 -->
+		<div class="modal uploadSuccessmodal">
+			<div>
+				<div class="modal-hd">教学视频</div>
+				<div class="modal-bd">
+					<div class="item flex flex-align-center">
+						<span class="name">标题</span>
+						<span class="flex-1 ellipsis">2020高考数学真题解析</span>
+					</div>
+					<div class="item flex flex-align-center">
+						<span class="name">链接</span>
+						<span class="flex-1 ellipsis">http://www.cenbel.com/</span>
+					</div>
+				</div>
+				<div class="modal-ft flex">
+					<a href="javascript:;" class="flex-1 cancel">取消</a>
+					<a href="javascript:;" class="flex-1">确定</a>
+				</div>
+			</div>
+		</div>
+		<!-- 上传 -->
+		<div class="modal uploadSuccessmodal">
+			<div>
+				<div class="modal-hd">教学视频</div>
+				<div class="modal-bd">
+					<div class="item flex flex-align-center">
+						<span class="name">标题</span>
+						<span class="flex-1 ellipsis">2020高考数学真题解析</span>
+					</div>
+					<div class="item flex flex-align-center">
+						<span class="name">文件</span>
+						<img src="img/icon1.png">
+						<div class="uploadBtn">
+							<input type="file" />
+						</div>
+					</div>
+				</div>
+				<div class="modal-ft flex">
+					<a href="javascript:;" class="flex-1 cancel">取消</a>
+					<a href="javascript:;" class="flex-1">确定</a>
 				</div>
 			</div>
 		</div>
@@ -327,7 +378,7 @@
 	$('.forwardBtn').click(function() {
 		$('.addrbookmodal').show()
 	});
-	$('.addrbookmodal .close').click(function() {
-		$('.addrbookmodal').hide()
+	$('.modal .close,.modal .cancel').click(function() {
+		$(this).closest('.modal').hide()
 	})
 </script>
