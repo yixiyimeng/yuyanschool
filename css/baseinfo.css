@@ -738,12 +738,12 @@
 	display: inline-block;
 	height: 15px;
 	width: 15px;
-	background: url(../img/demo/check.png) no-repeat center center;
+	background: url(../img/check.png) no-repeat center center;
 	background-size: contain;
 }
 
 .addrbookmodal .check.active i {
-	background-image: url(../img/demo/curcheck.png);
+	background-image: url(../img/curcheck.png);
 }
 .addrbookmodal .modal-bd{
 	padding-bottom: 20px;
