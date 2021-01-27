@@ -667,6 +667,7 @@
 	right: -32px;
 	background: url(../img/close2.png);
 }
+
 .modal>div .modal-hd {
 	color: #333;
 	font-size: 13px;
@@ -674,6 +675,19 @@
 	line-height: 42px;
 	background: #f7f7f7;
 	border-bottom: 1px solid #e5e5e5;
+}
+
+.modal .modal-ft a {
+	display: block;
+	line-height: 42px;
+	color: #666;
+	text-align: center;
+}
+
+.modal .modal-ft a+a {
+	color: #fff;
+	background: #2076b2;
+
 }
 
 /* 提交审核弹出框 */
@@ -745,9 +759,11 @@
 .addrbookmodal .check.active i {
 	background-image: url(../img/curcheck.png);
 }
-.addrbookmodal .modal-bd{
+
+.addrbookmodal .modal-bd {
 	padding-bottom: 20px;
 }
+
 .addrbookmodal .modal-bd>ul>li>div {
 	font-size: 15px;
 	cursor: pointer;
@@ -794,7 +810,73 @@
 	width: 22px;
 	margin-right: 20px;
 }
+
 /* 添加类型 */
-.addtypemodal>div{
+.addtypemodal>div {
 	width: 426px;
+}
+
+.addtypemodal .item {
+	color: #999;
+	margin: 0 25px;
+	padding: 10px 0;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: left;
+}
+
+.addtypemodal .item .name {
+	color: #333;
+}
+
+.addtypemodal .item .upload {
+	color: #fff;
+	width: 48px;
+	line-height: 24px;
+	overflow: hidden;
+	position: relative;
+	background: #2076b2;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.addtypemodal .item .upload input,
+.uploadSuccessmodal .item .uploadBtn input {
+	font-size: 400px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+
+}
+
+/* 上传成功 */
+.uploadSuccessmodal>div {
+	width: 350px;
+	text-align: left;
+	border: none;
+}
+
+.uploadSuccessmodal .item {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 40px;
+	padding-left: 25px;
+}
+
+.uploadSuccessmodal .name {
+	margin-right: 25px;
+}
+
+.uploadSuccessmodal .item .flex-1 {
+	min-width: 0;
+}
+
+.uploadSuccessmodal .item .uploadBtn {
+	height: 26px;
+	width: 26px;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin-left: 20px;
+	overflow: hidden;
+	background: url(../img/add3.png) no-repeat center center;
 }
