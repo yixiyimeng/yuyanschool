@@ -17,7 +17,8 @@
 .filterbar span {
 	display: inline-block;
 	color: #333;
-	padding: 10px 14px;
+	padding: 0 14px;
+	line-height: 28px;
 	cursor: pointer;
 }
 

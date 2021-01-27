@@ -151,6 +151,7 @@
 }
 
 .newsbox .newsbox-bd {
+	padding-top: 10px;
 	padding-bottom: 70px;
 }
 
@@ -240,7 +241,7 @@
 	width: 37px;
 	display: block;
 	position: absolute;
-	top: 45%;
+	top: calc(50% - 120px);
 	background: url(../img/prev.png) no-repeat center center;
 	transform: translateY(-50%);
 

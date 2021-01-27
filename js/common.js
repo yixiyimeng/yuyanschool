@@ -34,8 +34,8 @@ $(function() {
 		if (!$(this).hasClass('active')) {
 			$(this).siblings('a.active').removeClass('active')
 			$(this).addClass('active');
-			let index = $(this).index();
 			let name = $(this).attr('name');
+			let index = $('.modbox-tab a[name="' + name + '"]').index($(this));
 			$('.modbox-tabPanel[name="' + name + '"]').eq(index).show().siblings().hide()
 			console.log($('.modbox-tabPanel[name="' + name + '"]').length)
 		}

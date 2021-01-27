@@ -38,6 +38,10 @@
 	margin-top: 50px;
 }
 
+.mt60 {
+	margin-top: 60px;
+}
+
 .mb50 {
 	margin-bottom: 50px;
 }
@@ -61,9 +65,11 @@
 .color-red {
 	color: #ca2131;
 }
-.color-black{
+
+.color-black {
 	color: #333;
 }
+
 .imgbox img {
 	display: block;
 	width: 100%;
@@ -595,7 +601,7 @@
 
 /* 课程列表 */
 .courselist {
-	padding: 0 35px 40px;
+	padding: 0 35px;
 }
 
 .courselist .item {
